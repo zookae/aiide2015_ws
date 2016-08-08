@@ -1,0 +1,137 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{comment}
+\usepackage[utf8]{inputenc}
+
+\author{Alexander Zook, Antonios Liapis and Michael Cook}
+\title{2nd AIIDE Workshop on Experimental AI in Games}
+\date{}
+\begin{document}
+
+\maketitle
+The 2nd Experimental AI in Games (EXAG) workshop brings together both the 2014 EXAG and 2013 AI \& Game Aesthetics workshops at AIIDE under a unified banner, with the aim of fostering innovation in how AI is used in and for games.
+We affectionately describe the workshop as a celebration of `half-working things and half-baked ideas'.
+Games are growing broader and more experimental with each passing year, and academia must match this pace in order to remain ahead of the technological curve.
+EXAG aims to bridge the two extreme ideals of academia research: unstable, bleeding-edge ideas about the future of games, and useful, practical research embedded into playable experiences.
+We are interested both in new ideas that have not yet found a place in conference-level research, and in concrete examples of new kinds of gameplay experience made possible through academic research.
+EXAG accepted twelve papers and three tutorials for its two-day workshop, along with numerous playable demonstrations.
+We provide a summary of some of the workshop's themes below.
+
+Two papers addressed the new idea of player vision influencing content generation.
+Jonathan Tremblay and Clark Verbrugge (McGill University) presented work on placing decorative content in game levels based on areas that a player traversing a level would always see, sometimes see, or never see.
+Meanwhile, Michael Cook (Falmouth University) presented a system which generated level geometry based on pre-defined areas that should be visible (or not) to the player.
+
+Vital work on analyzing player relationships with their avatar was presented by Dominic Kao and Fox Harrell (MIT) with studies on how player avatars impact performance and engagement in a game.
+This work was complemented by the work of Chong-U Lim and Fox Harrell (MIT) which investigates how character customization can offer insights into a player's implicit perception of themselves and others.
+Both papers have major future ramifications for game designers of all genres.
+
+This year's workshop had a strong dedication to producing playable experiences embodying a research idea.
+James Owen Ryan, Adam Summerville, Michael Mateas and Noah Wardrip-Fruin (UC Santa Cruz) described work on an AI framework modeling knowledge transfer intended to breathe new life into open world games.
+Martin \v{C}erny (Charles University in Prague) presented \emph{Sarah And Sally}, a puzzle game where NPC companions are neither too pushy nor too distant.
+Studies on player reactions to the NPC fostered discussion on how players relate to AI companions.
+
+Multiple papers presented new perspectives on generating game content.
+Adam Summerville (UC Santa Cruz) presented two approaches to using machine learning from existing human designs to generate new content.
+One used Markov chains guided by Monte-Carlo Tree Search (co-authored with Shweta Philip and Michael Mateas of UC Santa Cruz) for Mario levels, and another used Bayes nets and principal component analysis for Zelda dungeon generation (co-authored with Michael Mateas of UC Santa Cruz).
+Dan Ventura showed work co-authored with Dean Lebaron and Logan Mitchell (Brigham Young University) on a game which invents game rules and levels using a combination of Q-learning and evolution.
+We hope to see more blended approaches to procedural content generation in future workshops.
+
+Not all submissions fit neatly into a theme, but they still provided stand-out presentations and food for thought.
+Antonios Liapis (University of Malta) showed how the Sentient Sketchbook had benefited from becoming a live web service, and argued for AI services as a future trend in content generation.
+Jeremy Gow and Joseph Corneli (Goldsmiths University) presented a technique for blending two game designs, including an impressive demonstration of Frogger-Meets-Zelda `Frolda.'
+Finally, Ian Horswill (Northwestern University) spoke passionately about a mixed-initiative tool to generate scenarios in the improv role-playing game \textit{Fiasco}.
+
+EXAG also hosted tutorials, demonstration sessions, some game development sessions in the evening, and some thought-provoking boardgame sessions.
+The workshop has gone from strength to strength over the past few years and we look forward to the future.
+EXAG was chaired by Antonios Liapis, Michael Cook and Alexander Zook; the papers of the workshop were published as AAAI Press Technical Report WS-15-21.
+
+\end{document}
+\clearpage
+\section{Earliest version}
+%AL: I thought that this chunk here has all the necessary information for the Report; then I checked that it is 200 words while we need 400-700 words. On the other hand, the 'report body' is too long as well (1060words). <I've moved an extended version of this in the last page>
+The 2nd Experimental AI in Games (EXAG) workshop brings together both the 2014 EXAG and 2013 AIGA workshops at AIIDE under a unified banner, with the aim of fostering innovation in how AI is used in and for games. 
+We are keen to promote new applications for AI in games, to encourage truly groundbreaking and risky research that may not be fully-developed, and to foster attempts to build games and other interactive experiences that are made possible or enhanced by the application of AI. 
+We affectionately describe the workshop as a celebration of `half-working things and half-baked ideas'. 
+This year's submissions followed core themes of: modeling player vision for generating game content; understanding player avatars to empower and reveal truths about players; alternative roles for non-player characters in games; and combining AI techniques for rule and level generation.
+
+\section*{Report Body}
+
+Games are increasingly broad and experimental with each passing year, and academia must match this pace to remain ahead of the technological curve. 
+EXAG aspires to span the two extreme ideals of academic research: unstable, bleeding-edge ideas about the future of games, and useful, practical research embedded into playable experiences.
+We are interested both in new ideas and research problems that have not yet found a place in conference-level publication, and in concrete examples of new kinds of gameplay experience made possible by the application of research.
+EXAG accepted twelve papers and three tutorials for its two-day workshop, as well as numerous playable demonstrations.
+We briefly summarize the themes that emerged below, though every paper is extremely high quality and rich with new and exciting ideas. 
+
+\textbf{AZ: what does `the raw data of generated content' mean? authoring predefined fitness functions rather than ones dependent on a player model (like the two vision models we saw)? honestly not understanding}
+Traditional approaches to procedural content generation prioritise the raw data of the generated content, but two papers at EXAG this year challenged this by presenting work that took into account the player's vision when deciding where to play content.
+Jonathan Tremblay and Clark Verbrugge (McGill University, Montreal) presented work modelling what locations along a level a player can be expected to see (or not) and used this to place decorative content in those levels.
+%paper regarding the placement of items and other decorative content in a game level based on assessments of areas that the critical path would always see, sometimes see, or never see at all.
+Meanwhile, Michael Cook (Falmouth University) presented a system which generated level geometry based on pre-defined areas that should be visible (or not) to the player.
+Both papers generated discussion about how modeling aspects of player experience could impact procedural generation in the future.
+
+Vital work in the analysis of player relationships with their avatar were presented by Dominic Kao (MIT) and Chong-U Lim (MIT), both working with Fox Harrell (MIT).
+Dominic presented studies that showed the potential power of the player avatar to impact performance and engagement in a game.
+This complemented Chong-U's work that continues a research on how character customisation and creation can reveal player's implicit perception of themselves and others.
+Player-avatar relationships are vital to all games with a player embodied in the world, highlighting the potential future ramifications of this work for game designers of all kinds.
+
+EXAG 2015 participants were deeply dedicated to producing playable experiences embodying particular research ideas.
+A key theme for many projects was using AI to find new, powerful roles for NPCs in games.
+James Ryan (UC Santa Cruz) presented an AI framework which models knowledge transfer through actions including forgetting, eavesdropping, lying and observation.
+James and his colleagues are building a game, \textit{Talk Of The Town}, to demonstrate this framework and show how it can breathe new life into open world interactions with non-player characters.
+Martin Cerny (Charles University in Prague) presented \textit{Sarah And Sally}, a puzzle game he designed to investigate the complex problem of building a NPC assistant that is neither too pushy nor too distant.
+The results from player studies, and Martin's own wisdom from building the game, inspired fruitful discussions on NPC capabilities relative to players and communication with players.
+
+Finally, multiple papers presented new perspectives on generating game content, particularly through combining multiple AI techniques.
+Adam Summerville (UC Santa Cruz) presented two papers that used small corpora of human level examples as input to statistical machine learning techniques able to subsequently generate high-quality game levels.
+One project used Markov chains guided by MCTS to generate Super Mario Bros.\ levels.
+Another project combined Bayes nets and principal component analysis to generate Zelda dungeon topology and level structures.
+Dan Ventura (Brigham Young University) showed work by his group on a game which invents game rules and levels using a combination of Q-learning and evolution.
+We hope to see more blended approaches to PCG systems in future workshops.
+
+Of course, not all submissions fit neatly into a theme, but they still provided stand-out presentations and food for thought.
+Antonios Liapis (University of Malta) showed how the Sentient Sketchbook benefitted from becoming a live web service, and argued for this to become a trend in the future for content generation researchers in particular, which sparked interesting debates on Twitter!
+Jeremy Gow (Goldsmiths University, London) presented conceptual blending to combine two game designs to generate new composite designs, including an impressive demonstration of Frogger-meets-Zelda 'Frolda'. 
+Finally, Ian Horswill demonstrated a Prolog-based system to generate content for improv drama-like game \textit{Fiasco}, and argued for why the game embodies a valuable area of AI for story support.
+
+EXAG also hosted tutorials, demonstration sessions, some game development sessions in the evening, and some thought-provoking boardgame sessions too.
+The workshop has gone from strength to strength over the past few years and we look forward to continuing the event if possible. 
+
+EXAG was chaired by Antonios Liapis, Michael Cook and Alexander Zook; the papers of the workshop were published as AAAI Technical Report WS-15-21.
+
+\section*{Authors}
+\begin{enumerate}
+\item Michael Cook (mike@gamesbyangelina.org) is a Senior Research Fellow at the University of Falmouth's AIR Lab.
+\item Alexander Zook (a.zook@gatech.edu) is a Data Scientist at Blizzard and a PhD student at Georgia Tech.
+\item Antonios Liapis (an.liapis@gmail.com) is a lecturer at the Institute of Digital Games at the University of Malta.
+\end{enumerate}
+
+\begin{comment}
+\clearpage
+\section*{My proper AAAI boring attempt - A.L.}
+%The 2nd workshop on Experimental AI in Games (EXAG) took place on November 14-15 in University California Santa Cruz, hosted by the Artificial Intelligence in Interactive Digital Entertainment. The 2nd iteration of the EXAG workshop spanned two days, and included the presentation of accepted papers, tutorials and game demos as well as networking and hacking sessions. EXAG was chaired by Antonios Liapis, Michael Cook and Alexander Zook; the papers of the workshop were published as AAAI Technical Report WS-15-21.
+
+As a workshop, EXAG aims to promote new applications for AI in games, to encourage truly groundbreaking and risky research that may not be fully-developed, and to foster attempts to build games and other interactive experiences that are made possible or enhanced by the application of AI. This year's paper submissions can be grouped into a few common core themes: the role of player vision in generating game content; the importance of player avatars in empowering and revealing truths about players; new ideas for non-player characters in games; and new approaches to the generation of rules and levels by combining multiple AI techniques.
+
+This year's workshop showed a very strong dedication to producing playable experiences that embody a particular research idea. A key theme around many of these was using AI to find new, powerful roles for NPCs to take on in games.
+%
+EXAG also hosted tutorials, demonstration sessions, some game development sessions in the evening, and some thought-provoking boardgame sessions too. The workshop has gone from strength to strength over the past few years and we look forward to continuing the event if possible. 
+\end{comment}
+
+\clearpage
+
+\section*{Even more versions! - A.L.}
+The 2nd Experimental AI in Games (EXAG) workshop brings together both the 2014 EXAG and 2013 AIGA workshops at AIIDE under a unified banner, with the aim of fostering innovation in how AI is used in and for games. 
+We are keen to promote new applications for AI in games, to encourage truly groundbreaking and risky research that may not be fully-developed, and to foster attempts to build games and other interactive experiences that are made possible or enhanced by the application of AI. 
+We affectionately describe the workshop as a celebration of `half-working things and half-baked ideas'. 
+This year's paper submissions followed core themes of: modeling player vision for generating game content; understanding player avatars to empower and reveal truths about players; alternative roles for non-player characters in games; and combining AI techniques for rule and level generation. The papers of the workshop were published in the AAAI Technical Report WS-15-21.
+
+The 2nd iteration of the EXAG workshop spanned two days, and included the presentation of accepted papers, tutorials and game demos as well as networking and hacking sessions. 
+%
+This year's workshop showed a very strong dedication to producing playable experiences that embody a particular research idea. A key theme around many of these was using AI to find new, powerful roles for NPCs to take on in games.
+%
+EXAG also hosted tutorials, demonstration sessions, some game development sessions in the evening, and some thought-provoking boardgame sessions too. The workshop has gone from strength to strength over the past few years and we look forward to continuing the event if possible. 
+
+\clearpage
+
+
+
+\end{document}
